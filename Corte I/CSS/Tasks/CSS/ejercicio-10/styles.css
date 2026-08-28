@@ -1,0 +1,25 @@
+.menu a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #1d3557;
+}
+
+.menu a:hover {
+    color: #e63946;
+    text-decoration: underline;
+}
+
+.formulario input:focus {
+    border: 2px solid #2a9d8f;
+    outline: none;
+    background-color: #f0fff4;
+}
+
+.lista li:first-child {
+    font-weight: bold;
+    color: #e76f51;
+}
+
+.lista li:nth-child(even) {
+    background-color: #f1faee;
+}
