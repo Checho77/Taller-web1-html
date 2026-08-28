@@ -1,0 +1,18 @@
+/* Selector por etiqueta */
+p {
+    color: #333333;
+    font-size: 16px;
+}
+
+/* Selector por clase */
+.destacado {
+    color: #2e7d32;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Selector por id */
+#titulo-principal {
+    color: #1565c0;
+    font-size: 32px;
+}
