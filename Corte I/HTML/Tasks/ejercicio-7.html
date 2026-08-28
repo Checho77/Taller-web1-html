@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Inscripción universitaria</title>
+</head>
+<body>
+    <h1>Formulario de inscripción</h1>
+    <form>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo"><br><br>
+
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="15" max="99"><br><br>
+
+        <label for="nacimiento">Fecha de nacimiento:</label><br>
+        <input type="date" id="nacimiento" name="nacimiento"><br><br>
+
+        <label for="carrera">Carrera:</label><br>
+        <select id="carrera" name="carrera">
+            <option value="sistemas">Ingeniería de Sistemas</option>
+            <option value="industrial">Ingeniería Industrial</option>
+            <option value="agroindustrial">Ingeniería Agroindustrial</option>
+        </select><br><br>
+
+        <p>Género:</p>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+
+        <p>Habilidades:</p>
+        <input type="checkbox" id="html" name="habilidades" value="html">
+        <label for="html">HTML</label><br>
+        <input type="checkbox" id="css" name="habilidades" value="css">
+        <label for="css">CSS</label><br>
+        <input type="checkbox" id="js" name="habilidades" value="js">
+        <label for="js">JavaScript</label><br><br>
+
+        <label for="foto">Foto:</label><br>
+        <input type="file" id="foto" name="foto"><br><br>
+
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="40"></textarea><br><br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
