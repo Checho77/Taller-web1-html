@@ -1,0 +1,31 @@
+.caja {
+    background-color: #94d2bd;
+    padding: 10px;
+    margin: 5px;
+}
+
+.block {
+    display: block;
+    width: 200px;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+    width: 150px;
+}
+
+.oculto {
+    display: none;
+}
+
+/*
+Diferencias observadas:
+- block: ocupa todo el ancho disponible y siempre empieza en una nueva línea.
+- inline: solo ocupa el espacio de su contenido, no respeta width/height, y se ubica en la misma línea que otros elementos.
+- inline-block: se ubica en la misma línea que otros elementos, pero SÍ respeta width/height.
+- none: el elemento desaparece por completo de la página, no ocupa espacio.
+*/
