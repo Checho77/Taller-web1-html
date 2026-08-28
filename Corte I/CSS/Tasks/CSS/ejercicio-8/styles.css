@@ -1,0 +1,27 @@
+.contenedor {
+    width: 960px;
+    margin: 0 auto;
+    background-color: #f1faee;
+}
+
+.encabezado {
+    background-color: #457b9d;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.contenido {
+    padding: 20px;
+}
+
+/* Adaptación para dispositivos móviles */
+@media (max-width: 768px) {
+    .contenedor {
+        width: 100%;
+    }
+
+    .encabezado h1 {
+        font-size: 22px;
+    }
+}
