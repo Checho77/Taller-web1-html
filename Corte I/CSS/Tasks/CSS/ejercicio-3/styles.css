@@ -1,0 +1,25 @@
+body {
+    font-family: 'Georgia', serif;
+}
+
+.titulo-noticia {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.subtitulo-noticia {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    font-style: italic;
+    color: #555555;
+}
+
+.cuerpo-noticia {
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.6;
+}
