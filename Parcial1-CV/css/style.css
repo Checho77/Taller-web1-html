@@ -1,0 +1,76 @@
+/*
+  Este archivo va DESPUÉS de PicoCSS en el HTML, así que aquí solo
+  ajustamos/agregamos detalles propios sin tener que reescribir
+  todo el framework.
+*/
+
+/* El header se ve más separado del resto con un pequeño borde inferior */
+header {
+  border-bottom: 1px solid #cccccc;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Le damos un poco más de espacio entre cada sección */
+main section {
+  margin-bottom: 2.5rem;
+}
+
+/* Los títulos de cada sección quedan con una pequeña línea a la izquierda,
+   para que se note visualmente dónde empieza cada bloque */
+main section h2 {
+  border-left: 4px solid #2f6fed;
+  padding-left: 0.6rem;
+}
+
+/* Sección de perfil: la foto queda fija arriba a la derecha, chiquita,
+   como en una hoja de vida de verdad. Usamos position: relative aquí
+   para poder anclar la foto con position: absolute más abajo. */
+#perfil {
+  position: relative;
+}
+
+.perfil-flex {
+  display: block;
+}
+
+/* Dejamos espacio a la derecha del texto para que no quede debajo de la foto */
+.perfil-flex p {
+  padding-right: 150px;
+}
+
+.foto-perfil {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 110px !important;
+  height: 110px !important;
+  max-width: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center top;
+  border: 3px solid #2f6fed;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* RESPONSIVE: en pantallas angostas (celular), los elementos del menú
+   se ponen uno debajo del otro en vez de en fila, para que no se encimen */
+@media (max-width: 600px) {
+  header nav ul li {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  /* En celular la foto vuelve a quedar arriba del texto, centrada,
+     en vez de flotando a la derecha */
+  .foto-perfil {
+    position: static;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }
+
+  .perfil-flex p {
+    padding-right: 0;
+    text-align: center;
+  }
+}
