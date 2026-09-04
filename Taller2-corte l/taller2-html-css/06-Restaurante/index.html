@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><strong>🍽️ Sabores del Valle</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#menu">Menú</a></li>
+            <li><a href="#platos-fuertes">Precios</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#reservar" role="button">Reservar Mesa</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Sabores del Valle</h1>
+        <p>Cocina casera del Valle del Cauca, con ingredientes de mercado y recetas de siempre.</p>
+    </header>
+
+    <main>
+
+        <section id="menu">
+            <h2>Menú del Día</h2>
+            <div class="contenedor">
+                <article>
+                    <img src="https://recetas.encolombia.com/wp-content/uploads/2012/12/Sancocho-de-Gallina-Recetas-1024x585.jpg" alt="Sancocho de gallina">
+                    <h3>Sancocho de Gallina</h3>
+                    <p>Con papa, yuca, plátano y arroz blanco.</p>
+                    <button>Agregar al Pedido</button>
+                </article>
+                <article>
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.1EM6RfeAiy5FpJYwUfUCVgHaFF?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bandeja paisa">
+                    <h3>Bandeja Paisa</h3>
+                    <p>Frijoles, chicharrón, carne molida y arepa.</p>
+                    <button>Agregar al Pedido</button>
+                </article>
+                <article>
+                    <img src="https://miro.medium.com/v2/resize:fit:800/1*EHGqpePbuJIRp2RvUKEaWw.jpeg" alt="Tilapia frita">
+                    <h3>Tilapia Frita</h3>
+                    <p>Acompañada de patacón, arroz y ensalada.</p>
+                    <button>Agregar al Pedido</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="platos-fuertes">
+            <h2>Carta de Precios</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Plato</th>
+                        <th>Categoría</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sancocho de Gallina</td>
+                        <td>Plato Fuerte</td>
+                        <td>$22.000</td>
+                    </tr>
+                    <tr>
+                        <td>Bandeja Paisa</td>
+                        <td>Plato Fuerte</td>
+                        <td>$26.000</td>
+                    </tr>
+                    <tr>
+                        <td>Tilapia Frita</td>
+                        <td>Plato Fuerte</td>
+                        <td>$24.000</td>
+                    </tr>
+                    <tr>
+                        <td>Empanadas Vallunas (x3)</td>
+                        <td>Entrada</td>
+                        <td>$9.000</td>
+                    </tr>
+                    <tr>
+                        <td>Torta de Chocolate</td>
+                        <td>Postre</td>
+                        <td>$8.000</td>
+                    </tr>
+                    <tr>
+                        <td>Limonada Natural</td>
+                        <td>Bebida</td>
+                        <td>$6.000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="reseñas">
+            <h2>Lo Que Dicen Nuestros Clientes</h2>
+            <ul>
+                <li>⭐⭐⭐⭐⭐ "El sancocho sabe como el de mi abuela." - Marcela P.</li>
+                <li>⭐⭐⭐⭐⭐ "Buena atención y porciones generosas." - Fabián O.</li>
+                <li>⭐⭐⭐⭐ "La bandeja paisa vale cada peso." - Diana C.</li>
+                <li>⭐⭐⭐⭐⭐ "Volveré por la tilapia frita." - Sebastián A.</li>
+            </ul>
+        </section>
+
+        <section id="reservar">
+            <h2>Reservar Mesa</h2>
+            <form>
+                <input type="text" placeholder="Nombre completo">
+                <input type="date">
+                <select>
+                    <option selected>Número de personas</option>
+                    <option>1 - 2 personas</option>
+                    <option>3 - 4 personas</option>
+                    <option>5 o más personas</option>
+                </select>
+                <textarea placeholder="Alguna solicitud especial"></textarea>
+                <button>Confirmar Reserva</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <small>
+            © 2026 Sabores del Valle · Programación en Ambiente Web I
+        </small>
+    </footer>
+
+</body>
+
+</html>

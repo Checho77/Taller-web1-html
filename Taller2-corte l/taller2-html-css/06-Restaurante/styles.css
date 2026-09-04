@@ -1,0 +1,59 @@
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --pico-primary: #c0392b;
+    --pico-primary-hover: #9c2d20;
+}
+
+/* NAVBAR */
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.5rem 2rem;
+    background: var(--pico-background-color);
+    border-bottom: 1px solid var(--pico-muted-border-color);
+}
+
+nav a {
+    border-radius: 8px;
+    padding: .4rem .8rem;
+    transition: .2s;
+}
+
+nav a:hover {
+    background: var(--pico-primary);
+    color: white;
+    text-decoration: none;
+}
+
+/* CONTENIDO */
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contenedor article {
+    flex: 1 1 220px;
+}
+
+img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 3rem;
+    padding: 2rem;
+    text-align: center;
+    border-top: 1px solid var(--pico-muted-border-color);
+    color: var(--pico-muted-color);
+}
